@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<?php
+
+
+$con = mysqli_connect("localhost","root","","registrationform");
+$q ="select * from fildet";
+$re = mysqli_query($con,$q);
+echo "<table border='2' cellspacing='10' cellpadding='10'><tr><td>Filename</td><td>Filesize</td><td>Uploadname</td><td>Status</td><td>Download</td></tr>"
+while($r = mysqli_fetch($re))
+{
+
+}
+
+?>
+</body>
+
+</html>
